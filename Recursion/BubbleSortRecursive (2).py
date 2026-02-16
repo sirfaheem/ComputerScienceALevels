@@ -1,0 +1,54 @@
+import random
+MaxIndex = 12
+
+MyList = [random.randint(1,100) for x in range(MaxIndex)]
+
+print("unsorted")
+print(MyList)
+print()
+
+n = MaxIndex -1
+Swapped = True
+i=0
+Temp=0
+
+while i< MaxIndex-1 and Swapped==True:
+    Swapped = False
+    for j in range(n):
+        if MyList[j] > MyList[j+1]:
+            Temp = MyList[j]
+            MyList[j]=MyList[j+1]
+            MyList[j+1] = Temp
+            Swapped = True
+    n-=1
+    print(MyList)
+
+print()
+print("sorted")
+print(MyList)
+
+    def bubbleSortRecursive(self, n=None): 
+        if n is None: 
+            n = self.length 
+        count = 0
+  
+        # Base case 
+        if n == 1: 
+            return
+        # One pass of bubble sort. After 
+        # this pass, the largest element 
+        # is moved (or bubbled) to end. 
+        for i in range(n - 1): 
+            if self.array[i] > self.array[i + 1]: 
+                self.array[i], self.array[i +
+                1] = self.array[i + 1], self.array[i] 
+                count = count + 1
+  
+        # Check if any recursion happens or not 
+          # If any recursion is not happen then return 
+        if (count==0): 
+            return
+  
+        # Largest element is fixed, 
+        #  recur for remaining array 
+        self.bubbleSortRecursive(n - 1)
