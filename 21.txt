@@ -19,3 +19,4 @@ J = 11, Q = 12, K = 13
 one human and one computer player.
 extend it to network play.
 make it graphical.
+test the app.
