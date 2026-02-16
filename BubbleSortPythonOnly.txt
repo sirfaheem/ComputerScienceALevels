@@ -1,0 +1,17 @@
+def bubble_sort(list1):  
+    # Outer loop for traverse the entire list  
+    for i in range(0,len(list1)-1):  
+        for j in range(len(list1)-1):  
+            if(list1[j]>list1[j+1]):   
+                # here we are not using temp variable  
+                list1[j],list1[j+1] = list1[j+1], list1[j]  
+    return list1
+
+    while(has_swapped):  
+        has_swapped = False  
+        for i in range(len(list1) - 1):  
+            if list1[i] > list1[i+1]:  
+                # Swap  
+                list1[i], list1[i+1] = list1[i+1], list1[i]  
+                has_swapped = True  
+    return list1  

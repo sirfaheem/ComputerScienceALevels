@@ -1,0 +1,10 @@
+Pick 3 random winners from a text file of 500 customer numbers and save it.
+
+compare sorting algorrithms with partially sorted files and totally random files.
+
+compare search algorithms. include sorting cost as well.
+
+load a binary file of players with attributes. pick 2 random players and compete with each other.
+
+link checker from a file.
+

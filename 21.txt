@@ -1,0 +1,21 @@
+21 is a card game. There are 2 players; both human. 
+
+use only one deck. 2 cards are drawn randomly for each player. 
+
+The players look at the cards if the cards total makes a total of 21 the call and win.
+
+if the total is more than 21, you are busted and lose.
+
+if the total is less than 21, you have the option to call or draw a card.
+
+you can draw up to 3 cards (5 cards in hand), after that the score is calculated.
+
+closer number to 21 is winner, if the numbers are the same, nobody wins.
+
+A can be considered 10 as well as 1.
+
+J = 11, Q = 12, K = 13
+
+one human and one computer player.
+extend it to network play.
+make it graphical.
