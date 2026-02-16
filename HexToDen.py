@@ -6,8 +6,8 @@ DenNum = 0 #initial denary value
 l = len(HexNum) #number of hex digits
 print(HexNum)
 #HexNum = HexNum[::-1] #reverse the string
-HexNum=''
-print()
+HexNum.
+print(HexNum)
 for c in range(l):
     thisChar = HexNum[c:c+1]
     thisDigit = 0

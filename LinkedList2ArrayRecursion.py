@@ -1,11 +1,12 @@
 NULL = -1
-SIZE = 7
-#Data = [""]* SIZE
-Data = ["Hamza", "Abbad", "Faheem", "Ibbad", "Zeeshan", "Muntazir", "Bashir"]
-Next = [3,6,0,5,-1,4,2]
-#Next = [0] * SIZE
-Free = 0
-#Start = NULL
+#SIZE = 7
+SIZE = 4
+Data = [""]* SIZE
+#Data = ["Hamza", "Abbad", "Faheem", "Ibbad", "Zeeshan", "Muntazir", "Bashir"]
+#Next = [3,6,0,5,-1,4,2]
+Next = [0] * SIZE
+Free = NULL
+Start = NULL
 Start = 1
 
 def init():
@@ -29,7 +30,7 @@ def output():
         print(Data[idx])
 
 def outputRecursive(Data , Next , idx):
-    '''arrat with data array with pointers'''
+    '''array with data array with pointers'''
     #idx = Start
     if Next[idx]==NULL:
         print( Data[idx])
@@ -50,6 +51,21 @@ def search(val):
         idx = Next[idx]
         if Data[idx]==val: isFound=True
     return isFound
+
+def insert(value):
+    if Free==SIZE-1:
+        print('list is full')
+    elif Start==NULL:
+        Start = Free
+        Data[Free]=value
+        Free+=1
+        Next[Start]=Free
+    else:
+        Data[Free] = value
+        Temp = Start
+        while Temp!=NULL and 
+        Free+=1
+        
 def main():
 
     #init()

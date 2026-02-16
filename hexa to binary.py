@@ -43,3 +43,4 @@ for char in hnum:
     convh(char)
 
 print(result)
+hnum=input()

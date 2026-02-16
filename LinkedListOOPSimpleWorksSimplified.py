@@ -25,7 +25,7 @@ class linkedList:
         if self.__freeListPtr != -1:
             newNodePtr = self.__freeListPtr
             self.thisList[newNodePtr].data = s
-            #self.__freeListPtr = self.thisList[self.__freeListPtr].nextP #can we simply incriment?
+            #self.__freeListPtr = self.thisList[self.__freeListPtr].nextP
             self.__freeListPtr +=1
             
         # Find insertion point

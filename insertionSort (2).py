@@ -1,7 +1,7 @@
 import random
 
 N = 10
-MyList = [random.randint(1,20) for i in range (N)]
+MyList = [random.randint(1,50) for i in range (N)]
 #N is upperbound
 
 print(MyList)
@@ -10,7 +10,7 @@ Placed = False
 
 #consider all numbers
 
-for index in range(0,N):
+for index in range(1,N):
     currentValue = MyList[index]
     #find the position in the list to insert
     counter = index

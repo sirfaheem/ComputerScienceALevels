@@ -37,3 +37,5 @@ def convh(hnum):
     return dnum
         
 print(convh(hnum))
+c=input()
+hnum=input()
