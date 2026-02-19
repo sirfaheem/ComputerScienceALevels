@@ -1,12 +1,14 @@
 import statistics
 import random
 
-def get_random_numbers(length, minimum=1, maximum=100):
+
+def get_random_numbers(length: int, minimum: int = 1, maximum: int = 100):
     numbers = []
     for _ in range(length):
         numbers.append(random.randint(minimum, maximum))
 
     return numbers
+
 
 def quicksort(numbers):
     if len(numbers) <= 1:
@@ -26,7 +28,7 @@ def quicksort(numbers):
         )
 
         return (
-            quicksort(items_less) +
-            pivot_items +
-            quicksort(items_greater)
+                quicksort(items_less) +
+                pivot_items +
+                quicksort(items_greater)
         )

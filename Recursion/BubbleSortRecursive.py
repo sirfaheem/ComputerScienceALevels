@@ -1,4 +1,7 @@
 import random
+
+from Recursion.BinarySearchRecursive import myList
+
 MaxIndex = 12
 
 MyList = [random.randint(1,100) for x in range(MaxIndex)]
@@ -9,7 +12,7 @@ print()
 
 
 
-def bubbleSortRecursive(myList, n): 
+def bubbleSortRecursive(myList:list, n:int= len(myList)):
 ##    if n is None: 
 ##        n = self.length 
     swapped = False

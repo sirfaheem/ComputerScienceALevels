@@ -4,7 +4,7 @@ str=fo.read(10);
 print("read string is: ",str)
 #check current position
 position=fo.tell();
-print ("current position: ",position
+print ("current position: ",position)
 #reposition pointer at the beginning
 position=fo.seek(0,0);
 str=fo.read(10);

@@ -1,9 +1,10 @@
 def main():
     p('faheem')
 
-def p(a):
+
+def p(a: str):
     print(a[-1], end='')
-    if len(a)>1:
+    if len(a) > 1:
         p(a[:-1])
 
 
