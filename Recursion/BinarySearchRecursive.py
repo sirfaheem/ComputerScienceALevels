@@ -7,7 +7,7 @@ def BinarySearch(item, lBound, uBound, myList):
     if uBound < lBound:
         return -1 #item not in the list
 
-    index = (uBound + lBound) // 2
+    index = uBound + (lBound - uBound) // 2
     ThisItem = myList[index]
 
     if item == ThisItem: #base case 2 item found

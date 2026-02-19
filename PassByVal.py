@@ -5,6 +5,7 @@ def main():
     print(m) #10
     check(m)
     print(m) #10
+    assert m == 10
 
 def check(n):
     n+=10

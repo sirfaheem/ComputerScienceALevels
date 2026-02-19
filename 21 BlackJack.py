@@ -89,4 +89,4 @@ print("Total:", total)
 
 # Dealer hits until their total is 17 or higher
 while total < 17:
-    dealer
+    raise NotImplementedError()

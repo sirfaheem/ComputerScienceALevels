@@ -1,4 +1,4 @@
-def is_palindrome(word):
+def is_palindrome(word: str):
     """Return True if word is a palindrome, False if not."""
     if len(word) <= 1:
         return True
