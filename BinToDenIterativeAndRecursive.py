@@ -1,8 +1,9 @@
 def BinToDenary(bs):
+    if len(bs) == 0:
+        return 0
     if len(bs) == 1:
-        return int(bs[0])*2**0
-    else:
-        return value += BinToDenary(bs[])
+        return int(bs[0])
+    return int(bs[0]) * 2**(len(bs)-1) + BinToDenary(bs[1:])
 
 def BinToDen(bs):
     DenValue=0
@@ -18,7 +19,7 @@ def BinToDen(bs):
             
     return DenValue
 
-
-print(BinToDen('01000010'))
+value = 0
+print(BinToDenary('01000010'))
 
 

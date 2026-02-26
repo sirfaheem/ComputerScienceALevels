@@ -1,7 +1,7 @@
 import pyfiglet
 import time
 from termcolor import colored, cprint
-wish = ['Happy', 'New', 'Year', '2023']
+wish = ['Happy', 'New', 'Year', '2026']
 count = 0
 colors = ['green', 'yellow', 'magenta', 'cyan']
 for i in range (1,10):

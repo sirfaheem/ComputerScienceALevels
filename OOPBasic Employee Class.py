@@ -1,4 +1,4 @@
-class employee:
+class Employee:
     def __init__(self, name, staffno):
         self.name = name
         self.staffno = staffno
@@ -11,8 +11,8 @@ class employee:
     def setSalary(self, sal):
         self.__salary = sal
         
-e1 = employee("faheem", 6544)
-e2 = employee("srihari", 5943)
+e1 = Employee("faheem", 6544)
+e2 = Employee("srihari", 5943)
 e1.setSalary(499)
 e2.setSalary(699)
 
