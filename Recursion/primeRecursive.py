@@ -1,17 +1,17 @@
-def prime(n,d=3):
-    if n==2 or n==3:
+def prime(n: int, d: int = 3):
+    if n == 2 or n == 3:
         return True
-    elif n==1:
+    elif n == 1:
         return False
-    elif n%2==0:
+    elif n % 2 == 0:
         return False
-    elif n%d==0:
+    elif n % d == 0:
         return False
-    elif d>=n//3:
+    elif d >= n // 3:
         return True
     else:
-        return prime(n,d+2) #general case
-        
+        return prime(n, d + 2)  # general case
+
 
 print(prime(1))
 print(prime(2))

@@ -2,23 +2,23 @@ import datetime
 import random
 
 class LibraryItem:
-    def __init__(self, t,a,i):
+    def __init__(self, t:str,a:str,i:str|int):
         self.__Title = t
         self.__AuthorArtist = a
         self.__ItemID = i
         self.__OnLoan = False
         self.__DueDate = datetime.date.today()
 
-    def GetTitle(self):
+    def GetTitle(self) -> str:
         return (self.__Title)
-    def GetAuthorArtist(self):
+    def GetAuthorArtist(self) -> str:
         return (self.__AuthorArtist)
-    def GetItemID(self):
+    def GetItemID(self) -> str | int:
         return (self.__ItemID)
 
 #lend book
     
-    def ShowDetail(self):
+    def ShowDetail(self) -> None:
         print("ID: ", self.GetItemID())
         print("Title: ", self.GetTitle())
         print("Author: ", self.__AuthorArtist)

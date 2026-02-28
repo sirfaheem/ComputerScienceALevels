@@ -19,7 +19,7 @@ class LibraryItem:
     def Borrow(self, bid):
         self.__BorrowerID = bid
         self.__OnLoan = True
-        self.__DueDate = datetime.date.today()+7
+        self.__DueDate = datetime.date.today() + datetime.timedelta(weeks=1)
     def Return(self):
         self.__BorrowerID = 0
         self.__OnLoan = False
@@ -76,7 +76,7 @@ class Borrower:
         print(f"There are {self.__ItemsOnLoan} items borrowed.")
 
 def Menu():
-    pass
+    raise NotImplementedError()
 
 ##Title=input("Enter book title: ")
 ##Author = input("Enter book author: ")

@@ -19,7 +19,7 @@ class LibraryItem:
     def Borrow(self, bid):
         self.__BorrowerID = bid
         self.__OnLoan = True
-        self.__DueDate = datetime.date.today()+7
+        self.__DueDate = datetime.date.today()+datetime.timedelta(weeks=1)
     def Return(self):
         self.__BorrowerID = 0
         self.__OnLoan = False
@@ -77,7 +77,7 @@ class Borrower:
 
 def Menu():
     choice = 't'
-    while choice not in (0,1,2,3,4,5,6,7,8,9):
+    while choice not in range(0,10):
         print("1 – Add a new borrower")
         print("2 – Add a new book")
         print("3 – Add a new CD")
@@ -107,20 +107,8 @@ def main():
             name =  input("Enter name of borrower ")
             email = input("Enter email of borrower ")
             Borrowers.append(Borrower(name,email))
-        elif choice ==2:
-            pass
-        elif choice==3:
-            pass
-        elif choice==4:
-            pass
-        elif choice==5:
-            pass
-        elif choice==6:
-            pass
-        elif choice==7:
-            pass
-        elif choice==8:
-            pass
+        elif choice in range(2, 9):
+            print("Not implemented yet")
         elif choice==9:
             print(Borrowers[0].GetBorrowerName())
         choice = Menu()

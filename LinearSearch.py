@@ -1,13 +1,15 @@
 import random
 
-data = [random.randint(1,20) for x in range (30)]
+SIZE = 30
+
+data = [random.randint(1,20) for x in range (SIZE)]
 #print(data)
 
 def LinearSearch(data):
     key = int(input('Enter value to search'))
     found = False
 
-    for x in range (30):
+    for x in range (SIZE):
         if key == data[x]:
             print("found at location: ", x)
             found = True
@@ -16,9 +18,8 @@ def LinearSearch(data):
         print('value not found')
 
 def BubbleSort(data):
-    temp = 0
-    n = 30 -1
-    for i in range (30):
+    n = SIZE - 1
+    for i in range (SIZE):
         for j in range(n):
             if data[j]>data[j+1]:
                 temp = data[j]
@@ -27,10 +28,6 @@ def BubbleSort(data):
         n = n -1
 
 def InsertionSort(data):
-    ItemToBeInserted = 0
-    CurrentItem = 0
-    index = 0
-    
     for index in range(len(data)):
         ItemToBeInserted = data[index]
         CurrentItem = index -1
@@ -43,6 +40,7 @@ def InsertionSort(data):
 def BinarySearch(data):
     lowerBound = 0
     upperBound = len(data)-1
+    mid = -1
     
     key = int(input("Enter value to search: "))
     found = False
